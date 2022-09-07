@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order</title>
+    <style>
+        #container{
+            width : 500px;
+            margin : 0 auto;
+            border: 1px solid #ddd;
+            padding : 10px;
+        }
+        h1{
+            margin: 0;
+            margin-bottom: 15px;
+            font-size: 25px;
+        }
+        form ul{
+            list-style: none;
+            padding: 10px;
+            margin:0;
+        }
+        li{
+            margin-bottom: 8px;
+        }
+        fieldset{
+            margin-bottom: 10px;
+        }
+        legend{
+            color : purple;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        label{
+            float:left;
+            width: 80px;
+            margin-left: 25px;
+            text-align: left;
+            font-weight: bold;
+        }
+        #adress{
+            width: 280px;
+        }
+        #button{
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .checkbox{
+            margin-left:25px;
+        }
+        .box_nu{
+            width : 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>상품주문서</h1>
+        <form action="abc.jsp" method="post">
+            <fieldset>
+                <legend>개인 정보</legend>
+                <ul>
+                    <li>
+                        <label for="name">이름</label>
+                        <input id="name" type="text" placeholder="여백없이 입력" required>
+                    </li>
+                    <li>
+                        <label for="phone_nu">연락처</label>
+                        <input id="phone_nu" type="tel" placeholder="연락가능한 번호" required>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>배송지 정보</legend>
+                <ul>
+                    <li>
+                        <label for="adress">주소</label>
+                        <input id="adress" type="text" required>
+                    </li>
+                    <li>
+                        <label for="tel">전화번호</label>
+                        <input id="tel" type="tel" required>
+                    </li>
+                    <li>
+                        <label for="memo">메모</label>
+                        <textarea id="memo" name="memo" cols="40" rows="3"></textarea>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset id="info">
+                <legend>주문정보</legend>
+                <ul>
+                    <li>
+                        <input class="checkbox" type="checkbox" name = "order1" value="cham">경북 성주 참외(5kg) <input class="box_nu" type="number" min="0" value="0"> box
+                    </li>
+                    <li>
+                        <input class="checkbox" type="checkbox" name = "order2" value="grapes">경북 성주 포도(5kg) <input class="box_nu" type="number" min="0" value="0"> box
+                    </li>
+                    <li>
+                        <input class="checkbox" type="checkbox" name = "order3" value="watermelon">경북 성주 수박(5kg) <input class="box_nu" type="number" min="0" value="0"> box
+                    </li>
+                </ul>
+            </fieldset>
+            <div id="button">
+                <button type="submit">주문하기</button>
+                <button type="reset">다시하기</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

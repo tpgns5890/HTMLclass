@@ -1,0 +1,61 @@
+#container{
+    width: 800px;
+    margin : 0 auto;
+}
+/* 헤더영역 */
+header{
+    background-color: lightblue;
+    /* overflow: hidden; */
+    height : 100px;
+}
+header h1{
+    color : black; 
+    width : 200px;
+    float :left;
+    margin-top:28.5px;
+    margin-left:20px;
+}
+nav{
+    margin-top: 23.5px;
+    width : 500px;
+    float : right;
+}
+nav li{
+    display : inline-block;
+    margin-right: 20px;
+}
+nav a{
+    color : black;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* 섹션영역 */
+section{
+    border : 2px solid lightblue;
+    padding: 10px;
+    overflow: hidden;
+}
+article{
+    width: 250px;
+    float: left;
+}
+#art4{
+    width:500px;
+}
+#art5{
+    margin-top: 72px;
+    text-align: right;
+}
+#art5 img{
+    width : 200px;
+    height: 200px;
+    
+}
+/* 푸터영역 */
+footer{
+    background-color: lightblue;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+}

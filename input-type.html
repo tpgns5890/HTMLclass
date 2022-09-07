@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input-Type</title>
+    <style>
+        form {
+            width:600px;
+            margin: 0 auto;
+        }
+        form ul{
+            list-style: none;
+            padding: 0;
+            margin:0;
+        }
+        p{
+            color:red;
+            display: inline;
+        }
+        fieldset{
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        legend{
+            font-weight: bold;
+        }
+        #form2 label{
+            width:150px;
+            margin-right: 10px;
+            float:left;
+            text-align: left;
+        }
+
+        #field1 li{
+            display: inline-block;
+        }
+        #field1 label{
+            width:70px;
+            margin-left: 0;
+        }
+        #field1 input{
+            width:100px;
+        }
+        #p_id{
+            width:100px;
+        }
+        #name{
+            width:100px;
+        }
+        #adress_nu{
+            width: 70px;
+        }
+        #field2 button{
+            margin-left: 5px;
+        }
+        #adress{
+            width: 350px;
+        }
+        #field3 button{
+            margin-left:5px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" action="abc.jsp" method="post">
+        <fieldset id="field1">
+            <ul>
+                <li>
+                    <label for="l_id">아이디: </label>
+                    <input id="l_id" type="text" required>
+                </li>
+                <li>
+                    <label for="l_pw">비밀번호: </label>
+                    <input id="l_pw" type="password" required>
+                </li>
+                <li>
+                    <button type="submit">로그인</button>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+    <form id="form2" action="abc.jsp" method="post">
+        <fieldset id="field2">
+            <legend>개인정보</legend>
+            <ul>
+                <li>
+                    <label for="p_id">아이디: <p>*</p></label>
+                    <input id="p_id" type="text" maxlength="10" required>
+                </li>
+                <li>
+                    <label for="p_pw">비밀번호: <p>*</p></label>
+                    <input id="p_pw" type="password" required></li>
+                <li>
+                    <label for="p_pwc">비밀번호 확인: <p>*</p></label>
+                    <input id="p_pwc" type="password" required>
+                </li>
+                <li>
+                    <label for="name">이름: <p>*</p></label>
+                    <input id="name" type="text" required>
+                </li>
+                <li>
+                    <label for="email">메일 주소: <p>*</p></label>
+                    <input id="email" type="email" maxlength="20" required>
+                </li>
+                <li>
+                    <label for="homepage">홈페이지 주소: </label>
+                    <input id="homepage" type="url">
+                </li>
+                <li>
+                    <label for="adress_nu">우편번호: </label>
+                    <input id="adress_nu" type="text" maxlength="3"> - 
+                    <input id="adress_nu" type="text" maxlength="3">
+                    <button type="button">우편번호 검색</button>
+                </li>
+                <li>
+                    <label for="adress">집 주소: </label>
+                    <input id="adress" type="text" maxlength="40">
+                </li>
+                <li>
+                    <label for="phone_nu">연락처: </label>
+                    <input id="phone_nu" type="tel">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset id="field3">
+            <label for="search">검색: </label>
+            <input id="search" type="text">
+            <button type="button">검색</button>
+            <button type="button">다시입력</button>
+        </fieldset>
+        <fieldset id="field4">
+            <legend>등록 정보</legend>
+            <ul>
+                <li>
+                    <label for="person_nu">참여인원<small>(최대10명)</small>:</label>
+                    <input id="person_nu" type="number" min="0" max="10" step="1" value="1">
+                </li>
+                <li>
+                    <label for="suport_nu">지원용품<small>(1인당 5개)</small>:</label>
+                    <input id="suport_nu" type="number" min="0" max="50" step="5" value="1">
+                </li>
+                <li>
+                    <label for="hope">희망단계<small>(상,중,하)</small>:</label>
+                    <input id="hope" type="range" min="1" max="3" step="1">
+                </li>
+                <li>
+                    <label for="select_file">첨부파일 선택: </label>
+                    <input type="file">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset id="field5">
+            <legend>수강 과목을 선택하세요<small>(1과목 선택 가능)</small></legend>
+            <ul>
+                <li>
+                    <label for="like_color">선호색상 </label>
+                    <input id="like_color" type="color" value="#00ff00">
+                </li>
+                <li>
+                    <label for="subject">신청과목<small>(회화)</small> </label>
+                    <input id="subject" name="subject" type="radio" value="easy" checked>영어회화(초급)
+                    <input id="subject" type="radio" value="normal">영어회화(중급)
+                    <input id="subject" type="radio" value="hard">영어회화(고급)
+                </li>
+                <li>
+                    <label for="interest">관심분야는?<small>(다수선택)</small> </label>
+                    <input id="interest" type="checkbox" value="twitter">Twitter
+                    <input id="interest" type="checkbox" value="facebook">facebook
+                    <input id="interest" type="checkbox" value="instagram">Instagram
+                </li>
+            </ul>
+        </fieldset>
+        <button type="submit">전송</button>
+        <button type="reset" >취소</button>
+    </form>
+</body>
+</html>

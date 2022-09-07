@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form ul{
+            list-style: none;
+        }
+        form li{
+            margin-bottom: 10px;
+        }
+        form label{
+            width:100px;
+            margin-right: 10px;
+            float:left;
+            text-align: right;
+        }
+        fieldset{
+            margin-bottom: 10px;
+        }
+        fieldset legend{
+            font-weight: bold;
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <form action="abc.jsp" method="post">
+        <fieldset>
+            <legend>개인정보</legend>
+            <ul>
+                <li><label for="name">이름</label>
+                <input id="name" type="text" value="홍길동" maxlength="10"></li>
+                <li><label for="email">메일 주소</label>
+                <input id="email" type="email" readonly></li>
+                <li><label for="range">숫자입력</label><input ip="range" type="number" min="1" max="10" step="2" value="2"></li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>로그인정보</legend>
+            <ul>
+                <li><label for="id">아이디</label>
+                <input id="id" type="text" placeholder="8자 이상"></li>
+                <li><label for="pw">비밀번호</label>
+                <input id="pw" type="password"></li>
+                <li><label for="url">웹주소</label>
+                <input id="url" type="url"></li>
+                <li><label for="tel">전화번호</label>
+                <input id="tel" type="tel"></li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>신청과목</legend>
+            <p>이 달에 신청할 과목을 선택하세요</p>
+            <label><input type="radio" name="subject" value="speaking">회화</label>
+            <label><input type="radio" name="subject" value="grammer" checked>문법</label>
+            <label><input type="radio" name="subject" value="writting">작문</label>
+        </fieldset>
+
+        <p>메일로 받고 싶은 뉴스주제 선택해 주세요</p>
+        <label><input type="checkbox" name="mailing1" value="speaking">해외단신</label>
+        <label><input type="checkbox" name="mailing2" value="speaking">5분회화</label>
+        <label><input type="checkbox" name="mailing3" value="speaking">모닝팝스</label>
+        <br><br>
+        <fieldset>
+            <button type="submit">전송</button>
+            <button type="reset" >취소</button>
+        </fieldset>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR&display=swap');
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    width:800px;
+    margin:0 auto;
+}
+nav {
+    background-color: #474933;
+}
+nav ul{
+    margin:0;
+}
+nav li{
+    list-style: none;
+    display: inline-block;
+    padding:20px;
+}
+nav li a{
+    color:#c9cda6;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+    margin-right: 55px;
+}
+section{
+    border: 1px solid #474933;
+    padding: 20px;
+}
+section h1{
+    margin:0;
+    text-align: center;
+    color:#474933;
+}
+section ul{
+
+    border-radius: 20px;
+    margin:20px;
+    padding:0;
+}
+section li{
+    margin: 0px 25px;
+    border-radius: 20px;
+    background-color: #474933;
+    display:inline-block;
+    padding: 5px 20px;
+    list-style: none;        
+}
+section a{
+    text-decoration: none;
+    color: #c9cda6;
+    font-weight:500;
+    font-size: large;
+}
+article{
+    background-color: #c1c699;
+    border-radius: 20px;
+    padding: 20px;
+    color:#474933;
+}
+article h2{
+    margin: 0;
+}
+dl{
+    line-height: 30px;
+    margin:0;
+}
+dt{
+    font-weight: 600;
+}
+dd{
+    margin:0;
+    font-weight: 500;
+}
+figure{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #474933;
+}
+.link_top {
+    text-align: right;
+    margin-right: 20px;
+}
+.link_top a{
+    color:#474933;
+}
+img{
+    width: 150px;
+    height: 150px;
+}
+aside{
+    background-color: #b2b880;
+    padding: 20px;
+    list-style: none;
+    color: #474933;
+}
+aside h2{
+    margin: 0;
+}
+aside ul{
+    font-weight: bold;
+    margin-bottom: 0;
+}
+aside li{
+    line-height: 30px;
+}
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #a0a573;
+    color: #474933;
+}
