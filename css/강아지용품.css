@@ -27,6 +27,14 @@ nav li{
 nav li:nth-child(2n){
     background-color: red;
 }
+h1::after{
+    content: "긴급";
+    color:red;
+    margin-left: 10px;
+    font-size: 16px;
+    position: relative;
+    top:-10px;
+}
 /* nav a{
     color : black;
     text-decoration: none;
