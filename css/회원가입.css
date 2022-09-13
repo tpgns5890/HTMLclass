@@ -1,0 +1,125 @@
+#container{
+    width:1000px;
+    margin: 0 auto;
+}
+
+
+/* 헤더 */
+#h_text{
+    text-align: center;
+}
+nav{
+    background-color: black;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    height: 41px;
+}
+nav li{
+    display:inline-block;
+    list-style: none;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    float: left;
+    padding: 10px;
+}
+nav li:last-child{
+    float: right;
+}
+nav a:hover{
+    background-color: pink;
+    color:black;
+}
+
+/* 좌측 사이드 */
+aside{
+    background-color: #eee;
+    height: 690px;
+    text-align: center;
+}
+#as_left{
+    width: 180px;
+    float: left;
+    padding: 10px;
+}
+
+
+/* 섹션 */
+section{
+    width:600px;
+    float: left;
+    height: 710px;
+    padding: 0;
+    text-align: center;
+}
+#section{
+    margin: 30px 40px 0 40px;
+}
+section h1{
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+form{ 
+    padding:15px;
+    background-color: #ddd;
+    margin-bottom: 20px;
+}
+fieldset{
+    border:0;
+    margin-bottom: 10px;
+}
+form li{
+    list-style: none;
+    border: 1px solid white;
+    background-color:#eee ;
+    margin-bottom: 5px;
+    padding:5px;
+    border-radius: 5px;
+}
+form label{
+    width: 180px;
+    margin-top:2.4px;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+}
+form input{
+    width: 240px;
+    height: 25px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+#fs_button{
+    text-align: center;
+}
+button{
+    font-weight: bold;
+    border: 0;
+    height: 50px;
+    border-radius: 25px;
+    width: 170px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+
+/* 우측 사이드 */
+#as_right{
+    width: 180px;
+    float: right;
+    padding: 10px;
+}
+
+
+/* 푸터 */
+footer{
+    clear: both;
+    text-align: center;
+    padding: 20px;
+    background-color: #ccc;
+}
